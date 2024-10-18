@@ -399,4 +399,23 @@ document.addEventListener('DOMContentLoaded', function () {
             generatePoster(category);
         });
     });
+		
+		// Add event listener for the download button
+    const downloadBtn = document.getElementById('download-btn');
+    downloadBtn.addEventListener('click', downloadPoster);
 });
+
+function downloadPoster() {
+    const poster = document.querySelector('.container');
+    
+    html2canvas(poster, {
+  scale: 4, // Increase the resolution
+  logging: true,
+  useCORS: true,
+}).then(canvas => {
+        const link = document.createElement('a');
+        link.download = `${currentCategory}-poster.png`;
+        link.href = canvas.toDataURL();
+        link.click();
+    });
+}
