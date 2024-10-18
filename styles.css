@@ -1,0 +1,198 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f06;
+}
+
+.outer-container {
+    padding-top: 80px; /* Adjust based on header height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+.poster {
+    flex-grow: 1;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    overflow-y: auto;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.company-name {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.company-name a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 5px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.company-name a:hover {
+    color: #f06;
+}
+
+.mega a {
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.big a {
+    font-size: 25px;
+    text-shadow: 2px 2px #000;
+}
+
+.middle a {
+    font-size: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+.small a {
+    font-size: 15px;
+    text-shadow: 2px 2px #000;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #f06;
+}
+
+.linkedin-logo {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .mega a {
+        font-size: 40px;
+    }
+
+    .big a {
+        font-size: 20px;
+    }
+
+    .middle a {
+        font-size: 18px;
+    }
+
+    .small a {
+        font-size: 14px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        margin: 5px 10px 0 0;
+    }
+}
