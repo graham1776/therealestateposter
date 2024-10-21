@@ -1,10 +1,10 @@
 const companiesData = {
-    logistics = [
+    logistics: [
         // Mega Companies
         { name: "Prologis", rank: "mega", url: "https://www.prologis.com" },
         { name: "Link Logistics", rank: "mega", url: "https://www.linklogistics.com" },
         { name: "EQT Exeter", rank: "mega", url: "https://www.eqtexeter.com" },
-        { name: "Rexford", rank: "big", url: "https://www.rexfordindustrial.com" },
+        { name: "Rexford", rank: "mega", url: "https://www.rexfordindustrial.com" },
         { name: "GIC", rank: "mega", url: "https://www.gic.com.sg" },
     
         // Big Companies
@@ -53,6 +53,7 @@ const companiesData = {
         { name: "Alere", rank: "middle", url: "http://www.alereproperty.com" },
         { name: "Wonderful", rank: "middle", url: "https://www.wonderfulrealestate.com" },
         { name: "Seagis", rank: "middle", url: "https://www.seagisproperty.com" },
+        { name: "WPT", rank: "middle", url: "https://wptcapital.com/" },
     
         // Small Companies
         { name: "ILPT", rank: "small", url: "https://www.ilptreit.com" },
